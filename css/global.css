@@ -1,0 +1,12 @@
+:root {
+    --almost-gray: #EFF0F0;
+    --border-gray: #0000001A;
+    --text-color: #161615;
+    --black: #1C1D1D;
+    --red: #E20613;
+    --white: #ffffff;
+}
+
+main {
+    background-color: var(--almost-gray);
+}
