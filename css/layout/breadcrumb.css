@@ -1,7 +1,8 @@
 .breadcrumb_container {
   font-size: 11px;
   color: var(--gray);
-  padding: 1em 0.5em;
+  padding: 0 0.5em;
+  padding-bottom: 1em;
 }
 
 .breadcrumb_container ul {
