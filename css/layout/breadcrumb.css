@@ -1,0 +1,24 @@
+.breadcrumb_container {
+  font-size: 11px;
+  color: var(--gray);
+  padding: 1em 0.5em;
+}
+
+.breadcrumb_container ul {
+  display: flex;
+  gap: 10px;
+}
+
+.breadcrumb_container li {
+  list-style: none;
+}
+
+.breadcrumb_container a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.breadcrumb_container li:not(:last-child)::after {
+  content: '>';
+  padding-left: 10px;
+}

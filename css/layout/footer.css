@@ -1,17 +1,21 @@
 footer {
   width: 100%;
-  background: transparent linear-gradient(
-    109deg, #B90A1B 0%, #C90015 23%, #BE0013 63%, #D40A20 63%,
-     #9C0110 100%) 0% 0% no-repeat padding-box;
-     display: flex;
-     flex-direction: column;
-     padding: 4em 2em;
-     font-family: 'Montserrat Alternates', sans-serif;
-     font-weight: normal;
-     font-style: normal;
-     font-size: 16px;
-     color: var(--white);
-    
+  background: transparent
+    linear-gradient(
+      109deg,
+      #b90a1b 0%,
+      #c90015 23%,
+      #be0013 63%,
+      #d40a20 63%,
+      #9c0110 100%
+    )
+    0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 2em;
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--white);
 }
 
 footer > div {
@@ -40,17 +44,14 @@ footer .social-img-container img:last-child {
 footer ul li {
   list-style: none;
   margin: 10px 0;
-
 }
 
 footer ul li a {
   text-decoration: underline;
   color: var(--white);
   font-size: 15px;
-  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 400;
 }
-
 
 footer h5 {
   margin: 2em 0;
@@ -59,9 +60,9 @@ footer h5 {
 
 @media screen and (min-width: 1000px) {
   footer {
-       align-items: flex-start;
-       padding-left: 5em;
-       padding-right: 5em;
+    align-items: flex-start;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   footer .policy-container {
