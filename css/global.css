@@ -11,9 +11,17 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
+  background-color: var(--almost-gray);
 }
 
 main {
-  background-color: var(--almost-gray);
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 930px;
+    margin: 0 auto;
+    padding: 36px 0px;
+  }
 }

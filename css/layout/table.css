@@ -64,11 +64,6 @@ thead {
 }
 
 @media screen and (min-width: 1000px) {
-  .table-sport {
-    width: 70%;
-    margin: 0 auto;
-  }
-
   .table-sport__body tr {
     flex-direction: row;
     flex-wrap: wrap;
