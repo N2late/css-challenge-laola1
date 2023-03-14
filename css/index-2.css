@@ -1,0 +1,142 @@
+.bundesliga-container {
+  margin-top: 8px;
+}
+
+.bundesliga-header {
+}
+
+.bundesliga-header__title {
+  background: transparent
+    linear-gradient(104deg, #292a2a 0%, #000000 50%, #292a2a 50%, #111215 100%)
+    0% 0% no-repeat padding-box;
+  color: var(--white);
+  text-align: center;
+  padding: 24px 0px;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.bundesliga-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 8px;
+  background-color: var(--black);
+  color: var(--white);
+  min-height: 48px;
+  padding: 0 8px;
+  overflow-x: scroll;
+}
+
+.bundesliga-nav_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  gap: 4px;
+  font-weight: 800;
+  min-width: fit-content;
+}
+
+.bundesliga-game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-gray);
+  box-shadow: rgba(28, 29, 29, 0.075) 0 0.75em 1.5em 0;
+  margin-bottom: 5px;
+}
+
+.bundesliga-game-team-2.games_slider__game__team {
+  flex-direction: column;
+  text-align: center;
+  min-width: 100px;
+  max-width: 100px;
+  font-size: 14px;
+}
+
+.games_slider__game__score.bigger {
+  font-size: 24px;
+}
+
+.games_slider__game__score.half-time-result {
+  font-weight: 400;
+}
+
+.games_slider__game__count__down {
+  font-size: 10px;
+  color: var(--gray);
+}
+
+.games_slider__game__date {
+  font-size: 12px;
+  padding: 4px 0px;
+}
+
+.games_slider__game__time {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.final-result {
+  color: var(--text-color);
+}
+
+em {
+  display: none;
+}
+
+a.game-link-mobile {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 1000px) {
+  .bundesliga-nav {
+    overflow-x: hidden;
+    padding: 0px 24px;
+  }
+
+  .bundesliga-game {
+    min-height: 140px;
+    justify-content: space-between;
+    padding: 0px 110px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .bundesliga-game-team-2.games_slider__game__team {
+    flex-direction: row;
+    min-width: 36%;
+    max-width: 36%;
+    font-weight: 800;
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  em {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+
+  em.ico-right-arrow:after {
+    content: '\003E';
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .bundesliga-game-team-2.games_slider__game__team img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .bundesliga-game-team-2.games_slider__game__team.desktop {
+    flex-direction: row-reverse;
+  }
+}
